@@ -1,0 +1,155 @@
+# CCR-205
+
+6.16 (a) Write a program to print a square size 5 by using the character S as shown below.                                                          
+
+S   S    S    S    S
+S   S    S    S    S
+S   S    S    S    S
+S   S    S    S    S
+S   S    S    S    S
+
+C code:  
+#include<stdio.h>
+int main(){
+    int i,j;
+    printf("\n\n");
+    for(i=0;i<=4;i++){
+    for(j=1;j<=5;j++)
+    printf(" S");
+    printf("\n\n");
+}
+}
+                    
+ Output:
+
+S   S    S    S    S
+S   S    S    S    S
+S   S    S    S    S
+S   S    S    S    S
+S   S    S    S    S  
+
+
+
+ 6.16(b): Write a program to print a square size 5 by using the character S as shown below.
+                         S    S    S    S    S
+                         S                   S
+                         S                   S
+                         S                   S
+                         S    S    S    S    S
+
+
+
+Code :
+#include<stdio.h>
+int main(){
+    int i,j,n;
+    n=5; printf("\n\n");
+    for(i=1;i<=n;i++)
+    printf(" S ");
+    printf("\n\n");
+    for(i=1;i<=n-2;i++){
+    printf("S ");
+    for(j=1;j<=n-2;j++)
+    printf("  ");
+    printf("S\n\n");
+    }
+    for(i=1;i<=n;i++)
+    printf("S ");
+    printf("\n");
+}
+
+Output :
+
+S    S    S    S    S
+S                   S
+S                   S
+S                   S
+S    S    S    S    S
+
+
+ 6.18 : Write the program to print all integers that are not divisible by 2 or 3 and lie between 1 and 100. Program should also account the number of such integers and print the result.
+
+#include<stdio.h>
+int main(){
+    int i,count=0;
+    printf("The numbers not divisible by 2 or 3 are = \n");
+    for(i=1;i<100;i++){
+    if(i%2!=0&&i%3!=0){
+    printf("%d\n",i);
+    count=count+1;
+    }
+    }
+    printf("\nThe countable numbers is: %d",count);
+}
+
+
+
+Output :
+The numbers not divisible by 2 or 3 are =
+1
+5
+7
+11
+13
+17
+19
+23
+25
+29
+31
+35
+37
+41
+43
+47
+49
+53
+55
+59
+61
+65
+67
+71
+73
+77
+79
+83
+85
+89
+91
+95
+97
+The countable numbers is: 33
+
+
+
+6.19: Write a program to print  a square of size 5 by using the character S as shown below:
+
+S    S    S    S    S
+S    S    S    S    S
+S    S    O    S    S
+S    S    S    S    S
+S    S    S    S    S
+
+C Code:
+#include<stdio.h>
+ int main(){
+     int n,i,j,mid;
+      mid=(int)(5/2);
+    	for(i=0;i<5;i++){
+       for(j=0;j<5;j++){
+     if(i==mid&&j==mid)
+      printf("0 ");
+            else
+              printf("S ");
+            }
+              printf("\n\n");
+    }
+}
+Output :
+
+S    S    S    S    S
+S    S    S    S    S
+S    S    O    S    S
+S    S    S    S    S
+S    S    S    S    S
