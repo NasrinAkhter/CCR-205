@@ -1,0 +1,80 @@
+# CCR-205
+
+1.	Write a C program to find the area of a right angled triangle.       
+C code:
+#include<stdio.h>
+int main(){
+    float  h,w;
+    float area;
+    printf("Enter the height and width of the right angled triangle :");
+    scanf("%f%f",&h,&w);
+    area = 0.5 * h * w;
+    printf(" The area of the right angled triangle is : %f",area);
+    return 0;
+}
+Sample Output :
+Enter the height and width of the right angled triangle  :10
+5
+ The area of the right angled triangle is  : 25.000000
+
+2. How to calculate power of a number in c
+ C Code:
+#include<stdio.h>
+int main(){
+    int pow,num,i=1;
+    long int sum=1;
+    printf("\nEnter a number : ");
+    scanf("%d",&num);
+    printf("\nEnter power : ");
+    scanf("%d",&pow);
+    while(i<=pow){
+         sum=sum*num;
+         i++;
+    }
+   printf("\n%d to the power %d is : %d",num,pow,sum);
+    return 0;
+}
+Sample Output :
+Enter a number : 5
+Enter power : 2
+5 to the power 2 is : 25
+3. C program for sum of digits of a number
+
+C Code :
+#include<stdio.h>
+int main(){
+    int num, sum = 0 , r;
+    printf("Enter a number : ");
+    scanf("%d",&num);
+    while(num){
+          r = num%10;
+          num = num/10;
+          sum = sum + r;
+          }
+    printf("Sum of digits of number : %d",sum);
+    return 0;
+}
+Sample Output :
+Enter a number : 123
+Sum of digits of number : 6
+
+4. Sum of digits of a number in C using for loop
+
+C Code:
+#include<stdio.h>
+int main(){
+    int num, sum = 0, r;
+    printf("Enter a number :");
+    scanf("%d",&num);
+    for(;num != 0; num = num/10){
+        r = num%10;
+        sum = sum + r;
+    }
+    printf("Sum of the digits of number : %d",sum);
+    return 0;
+}
+Sample Output :
+Enter a number :567
+Sum of the digits of number : 18
+
+
